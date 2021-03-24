@@ -1,5 +1,6 @@
-/*
- * Copyright 2020 VMware, Inc. All rights reserved. VMware Confidential
+/*!
+ * Copyright 2021 VMware, Inc.
+ * SPDX-License-Identifier: BSD-2-Clause
  */
 
 // import { FormInputWidget } from '../../../../../../cypress/support/widgets/form-input.widget';
@@ -34,7 +35,7 @@ export class QuickSearchWo<T> extends BaseWidgetObject<T> {
 
     getSearchResultItem = this.factory.dataUi(QuickSearchDataUi.searchResultItem);
 
-    getSelectSearchResultItem = this.factory.dataUi(QuickSearchDataUi.selectCurrentResult);
+    getSelectSearchResultItem = this.factory.css('.selected');
 
     getResultNotFound = this.factory.dataUi(QuickSearchDataUi.searchResultNotFound);
 }
